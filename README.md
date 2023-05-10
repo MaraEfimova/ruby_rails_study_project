@@ -20,6 +20,7 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions on WSL 2
+gem list
 
 sudo service postgresql start 
 rails server -b 0.0.0.0
