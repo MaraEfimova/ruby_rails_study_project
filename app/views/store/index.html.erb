@@ -4,7 +4,9 @@
 
 <h1>Your Pragmatic Catalog</h1>
 
-<h3>You have been here <%= @session_counter %>times</h3>
+<% if session[:counter] > 5 %>
+  <h3>You have been here <%= session[:counter] %> times</h3>
+<% end %>
 <ul class="catalog">
   <% cache @products do %>
     <% @products.each do |product| %>
